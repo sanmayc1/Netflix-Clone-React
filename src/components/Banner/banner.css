@@ -1,0 +1,125 @@
+.banner {
+  background-image: url("https://media.gq.com/photos/58582aab8ba341a6292b91a8/16:9/w_2560%2Cc_limit/John%2520Wick%2520Chapter%25202%2520-%2520International%2520Poster.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+}
+.banner-contents {
+  max-width: 500px;
+  padding-top: 20rem;
+  padding-left: 4rem;
+}
+
+.banner-contents button {
+  padding: 0.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  font-size: 15px;
+  font-weight: 700;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.banner-button {
+  display: flex;
+  gap: 0.6rem;
+}
+.banner-play-button {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+.banner-play-button:hover {
+  background-color: #c1c1c0;
+}
+.banner-info-button {
+  background-color: #4d4d4d;
+  color: white;
+}
+.banner-info-button:hover {
+  background-color: #2c2c2c;
+}
+.fade {
+  width: 100%;
+  height: 7.5rem;
+  background: rgb(17, 17, 17);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 0) 1%,
+    rgba(17, 17, 17, 1) 23%
+  );
+}
+/*  */
+
+@media screen and (max-width: 768px) {
+  .banner-contents {
+    padding-left: 2rem;
+    padding-top: 15rem;
+  }
+  .banner {
+    height: 540px;
+  }
+  .banner-contents h1 {
+    font-size: 2rem;
+  }
+
+  .banner-contents p {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+
+  .banner-contents button {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-contents {
+    padding-left: 1rem;
+    padding-top: 10rem;
+  }
+  .banner {
+    height: 360px;
+  }
+
+  .banner-contents h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner-contents p {
+    font-size: 0.6rem;
+    max-width: 250px;
+  }
+
+  .banner-button {
+    flex-direction: column;
+    width: 30%;
+  }
+  .banner-info-button {
+    display: none !important ;
+  }
+
+  .banner-contents button {
+    font-size: 12px;
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    height: 750px;
+  }
+  .fade {
+    width: 100%;
+    margin-top: 9rem;
+  }
+}

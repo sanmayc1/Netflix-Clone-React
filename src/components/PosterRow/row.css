@@ -1,0 +1,80 @@
+.row {
+  margin-left: 2rem;
+}
+h3 {
+  font-size: 1.5rem !important;
+  padding-bottom: 15px;
+  margin-left: 0 !important;
+}
+
+.poster {
+  max-height: 250px;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform, 0.5s;
+}
+.posters {
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.posters::-webkit-scrollbar {
+  display: none;
+}
+.poster:hover {
+  transform: scale(1.1);
+}
+.slick-slide > div {
+  padding: 20px;
+  margin: 0;
+}
+@media (max-width: 769px) {
+  .poster {
+    max-height: 200px;
+    margin-right: 10px;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+    margin-left: 18px !important;
+  }
+  .slick-slide > div {
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .poster {
+    max-height: 150px;
+  }
+
+  .posters {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 0.8rem !important;
+    margin-left: 10px !important;
+  }
+
+  .slick-slide > div {
+    padding: 20px;
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .slick-slide > div {
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media (max-width: 2664px) {
+  .slick-slide > div {
+    padding: 10px;
+    margin: 0;
+  }
+  .poster {
+    max-height: 350px;
+  }
+}
