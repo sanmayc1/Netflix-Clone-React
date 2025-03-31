@@ -2,7 +2,7 @@ import "./row.css";
 import TMDB from "../../Api/api.jsx";
 import { useEffect, useState } from "react";
 import { Img_BaseUrl } from "../../Api/constants.jsx";
-import MovieModal from "../modals/Modals.jsx";
+import MovieModal from "../Modals/Modals.jsx";
 import { ToastContainer, toast } from "react-toastify";
 const api_Key = import.meta.env.VITE_API_KEY;
 import "slick-carousel/slick/slick.css";
